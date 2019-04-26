@@ -72,25 +72,25 @@ assertEquals(size, treeRB.darPeso());
 //	
 //	
 //	@Test
-//	public void testGetMaximum() {
-//		sceneOne();
-//		MercadoInternacional marketOne= new MercadoInternacional("USB1", 25.0, "11/01/2019", "9:45");
-//		MercadoInternacional marketTwo= new MercadoInternacional("USB2", 21.0, "12/01/2019", "8:45");
-//		MercadoInternacional marketThree=new MercadoInternacional("USB3", 12.0, "10/01/2019", "8:35");
-//		MercadoInternacional marketFour=new MercadoInternacional("USB4", 16.0, "09/01/2019", "10:35");
-//		MercadoInternacional marketFive=new MercadoInternacional("USB5", 20.0, "01/01/2019", "3:35");
-//        treeRB.insertar(marketOne.getValor(), marketOne);
-//        treeRB.insertar(marketTwo.getValor(), marketTwo);
-//        treeRB.insertar(marketThree.getValor(), marketThree);
-//        treeRB.insertar(marketFour.getValor(), marketFour);
-//        treeRB.insertar(marketFive.getValor(), marketFive);
-//        double keySearch=25.0;
-//        MercadoInternacional maximium=treeRB.darMayor();
-//        
-//        assertEquals(maximium.getValor(), keySearch);
-//        
-//		
-//	}
+	public void testGetMaximum() {
+		sceneOne();
+		Mercado marketOne= new Mercado("USB1", 25.0, "11/01/2019", "9:45");
+		Mercado marketTwo= new Mercado("USB2", 21.0, "12/01/2019", "8:45");
+		Mercado marketThree=new Mercado("USB3", 12.0, "10/01/2019", "8:35");
+		Mercado marketFour=new Mercado("USB4", 16.0, "09/01/2019", "10:35");
+		Mercado marketFive=new Mercado("USB5", 20.0, "01/01/2019", "3:35");
+        treeRB.insertar(marketOne.getValor(), marketOne);
+        treeRB.insertar(marketTwo.getValor(), marketTwo);
+        treeRB.insertar(marketThree.getValor(), marketThree); 
+        treeRB.insertar(marketFour.getValor(), marketFour);
+        treeRB.insertar(marketFive.getValor(), marketFive);
+        double keySearch=25.0;
+        Mercado maximium=treeRB.darMayor();
+        
+        assertEquals(maximium.getValor(), keySearch);
+        
+		
+	}
 //	
 //	@Test
 //	public void testGetMinimium() {
