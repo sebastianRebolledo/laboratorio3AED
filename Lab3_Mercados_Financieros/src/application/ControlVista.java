@@ -145,9 +145,10 @@ public class ControlVista implements Initializable {
 	
 	public void editarInformacion(String i,String f) {
 		System.out.println("Entro aca maldita sea");
-		System.out.println(main.getMercadofinanciero().consultarPrecioMasBajoAccion(i,f)+"Aqui hp");
+		System.out.println(main.getMercadofinanciero().consultarPrecioMasBajoAccion(i,f));
 		pAlto.setText("entraaa");
 		pAlto.setText(main.getMercadofinanciero().consultarPrecioMasRangoFecha(i, f)+"");
+		pBajo.setText(main.getMercadofinanciero().consultarPrecioMasBajoAccion(i, f)+"");
 		System.out.println(main.getMercadofinanciero().consultarPrecioMasRangoFecha(i, f)+"");
 	}
 	
