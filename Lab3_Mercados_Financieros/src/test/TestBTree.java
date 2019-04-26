@@ -35,24 +35,24 @@ assertEquals(size, 5);
 		
 				
 	}
-//	@Test
-//	public void testMaximium() {
-//		scenOne();
-//		MercadoInternacional marketOne= new MercadoInternacional("USB1", 18.0, "11/01/2019", "9:45");
-//		MercadoInternacional marketTwo= new MercadoInternacional("USB2", 21.0, "12/01/2019", "8:45");
-//		MercadoInternacional marketThree=new MercadoInternacional("USB3", 25.0, "10/01/2019", "8:35");
-//		MercadoInternacional marketFour=new MercadoInternacional("USB4", 16.0, "09/01/2019", "10:35");
-//		MercadoInternacional marketFive=new MercadoInternacional("USB5",15.0 , "01/01/2019", "3:35");
-//treeAvl.insert(marketOne.getValor(), marketOne);
-//treeAvl.insert(marketTwo.getValor(), marketTwo);
-//treeAvl.insert(marketThree.getValor(), marketThree);
-//treeAvl.insert(marketFour.getValor(), marketFour);
-//treeAvl.insert(marketFive.getValor(), marketFive);
-//BNode<Double, MercadoInternacional> nodeMaximum=treeAvl.maximum(treeAvl.getRoot());
-//assertEquals(nodeMaximum.getValue().getValor(),marketThree.getValor());
-//
-//
-//	}
+	@Test
+	public void testMaximium() {
+		scenOne();
+		Mercado marketOne= new Mercado("USB1", 18.0, "11/01/2019", "9:45");
+		Mercado marketTwo= new Mercado("USB2", 21.0, "12/01/2019", "8:45");
+		Mercado marketThree=new Mercado("USB3", 25.0, "10/01/2019", "8:35");
+		Mercado marketFour=new Mercado("USB4", 16.0, "09/01/2019", "10:35");
+		Mercado marketFive=new Mercado("USB5",15.0 , "01/01/2019", "3:35");
+treeAvl.insert(marketOne.getValor(), marketOne);
+treeAvl.insert(marketTwo.getValor(), marketTwo);
+treeAvl.insert(marketThree.getValor(), marketThree);
+treeAvl.insert(marketFour.getValor(), marketFour);
+treeAvl.insert(marketFive.getValor(), marketFive);
+BNode<Double, Mercado> nodeMaximum=treeAvl.maximum(treeAvl.getRoot());
+assertEquals(nodeMaximum.getValue().getValor(),marketThree.getValor());
+
+
+	}
 //	
 //	@Test
 //	public void testMinimium() {
